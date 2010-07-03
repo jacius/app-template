@@ -1,0 +1,4 @@
+name: My App
+version: 1.0
+icon: My App.icns
+main: src/main.rb

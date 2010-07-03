@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/
+PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>CFBundleDevelopmentRegion</key>
+        <string>English</string>
+        <key>CFBundleExecutable</key>
+        <string>run.sh</string>
+% if config['icon'] and not config['icon'].empty?
+        <key>CFBundleIconFile</key>
+        <string><%= config['icon'] %></string>
+% end
+        <key>CFBundleInfoDictionaryVersion</key>
+        <string>6.0</string>
+        <key>CFBundleName</key>
+        <string><%= config['name'] %></string>
+        <key>CFBundlePackageType</key>
+        <string>APPL</string>
+        <key>CFBundleSignature</key>
+        <string>????</string>
+% if config['version'] and not config['version'].to_s.empty?
+        <key>CFBundleVersion</key>
+        <string><%= config['version'] %></string>
+% end
+        <key>NSMainNibFile</key>
+        <string>MainMenu</string>
+</dict>
+</plist>
